@@ -1,0 +1,36 @@
+{
+  "name": "dsh-context-hint",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness bundle that tells the model how much of its context budget is in use, and that automatic compaction is a safe fallback.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "context",
+    "compaction"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elevator14B/dsh-context-hint.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
